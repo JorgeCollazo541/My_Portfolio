@@ -12249,14 +12249,15 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 
-body {
+body#home {
   font-family: "Poppins", Arial, sans-serif;
   font-size: 14px;
   line-height: 1.8;
   font-weight: normal;
-  background: #fff;
+  background-image: url("Images/backgroundNav.png");
   color: gray; 
 }
+
 
 
 a {
@@ -12301,6 +12302,12 @@ h1, h2, h3, h4, h5,
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center; 
+}
+
+#navBackground{
+  border-top: solid 3px;
+  border-left: solid 3px;
+  border-color: #0096C7;
 }
 
 
@@ -12404,13 +12411,16 @@ h1, h2, h3, h4, h5,
     
     #sidebar ul li.active > a {
         background-color: #0096C7;
-        border: solid #CAF0F8;
+        border-top: solid #CAF0F8;
+        border-bottom: solid #CAF0F8;
+        border-left: solid #CAF0F8;
         color: #fff; 
     }
     
       #sidebar ul li.active > a:hover {
         background: linear-gradient(210deg, #0E0E52 20%, #0077B6, #00B4D8);
     }
+
     
   @media (max-width: 991.98px) {
     #sidebar {
