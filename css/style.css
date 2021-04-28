@@ -6,7 +6,7 @@ body{
   line-height: 1.8;
   font-weight: normal;
   background: url("..images/dark.jpg");
-  color: gray; 
+  color: rgb(0, 0, 0); 
 }
 /* --Home-- */
 
@@ -23,7 +23,7 @@ body{
 body#home{
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(to bottom, #90e1ef8f, #caf0f86e), url('../img/placeholder2.png');
+  background-image: linear-gradient(to bottom, #90e1ef62, #caf0f862), url('../img/placeholder2.png');
   background-size: cover;
   position: relative;
   padding: 0;
@@ -308,6 +308,23 @@ a[data-toggle="collapse"] {
   color: rgba(255, 255, 255, 0.5); 
 }
 
+/*--Swiper--*/
+.swiper-container {
+  width: 300px;
+  height: 300px;
+  padding: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+#htmlImg{
+  background-image: url("../about_me.html/css and html.png");
+}
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
