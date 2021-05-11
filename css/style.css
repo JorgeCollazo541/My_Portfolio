@@ -1,3 +1,61 @@
+/* --Home-- */
+
+body#home{
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, #90e1ef62, #caf0f862), url('../img/placeholder2.png');
+  background-size: cover;
+  position: relative;
+  padding: 0;
+}
+
+
+
+/* --About Me-- */
+
+body#aboutMe div#content div{
+  color: blue;
+  border: solid lightblue;
+}
+
+.imgStack{
+  display: grid;
+}
+
+.imgStackImg:first-of-type{
+  grid-column: 2 / span 2;
+  grid-row: 1 / span 1;
+}
+
+.imgStackImg:last-of-type{
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 1;
+}
+
+/* --Past Work-- */
+
+/* --Resume-- */
+
+/* --Services-- */
+
+/* --Skills-- */
+
+/*--Swiper--*/
+
+.swiper-container {
+  width: 300px;
+  height: 300px;
+  padding: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+
 /* --General-- */
 
 body{
@@ -283,63 +341,3 @@ a[data-toggle="collapse"] {
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-
-/* --Home-- */
-
-body#home{
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(to bottom, #90e1ef62, #caf0f862), url('../img/placeholder2.png');
-  background-size: cover;
-  position: relative;
-  padding: 0;
-}
-
-/* --About Me-- */
-
-div.imgStack{
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  position: relative;
-}
-div.imgStack img{
-  height: 100%;
-  width: 100%;
-}
-
-div.imgStackTop{
-  grid-column: 1;
-  grid-row: 1;
-  padding-top: 20%;
-  z-index: 1;
-}
-
-div.imgStackBottom{
-grid-column: 4;
-grid-row: 1;
-}
-
-/* --Past Work-- */
-
-/* --Resume-- */
-
-/* --Services-- */
-
-/* --Skills-- */
-
-/*--Swiper--*/
-
-.swiper-container {
-  width: 300px;
-  height: 300px;
-  padding: 50px;
-}
-
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 300px;
-  height: 300px;
-}
-
-
