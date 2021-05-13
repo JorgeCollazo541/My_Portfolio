@@ -1,69 +1,3 @@
-/* --Home-- */
-
-body#home{
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(to bottom, #90e1ef62, #caf0f862), url('../img/placeholder2.png');
-  background-size: cover;
-  position: relative;
-  padding: 0;
-}
-
-
-
-/* --About Me-- */
-
-body#aboutMe div#content div{
-  color: blue;
-}
-
-.imgStack{
-  display: grid;
-}
-
-p.just{
-  text-align: justify;
-}
-
-.imgStackImg{
-  height: 150px;
-  width: 150px;
-}
-
-.imgStackImg:first-of-type{
-  grid-column: 2 / span 2;
-  grid-row: 1 / span 1;
-}
-
-.imgStackImg:last-of-type{
-  grid-column: 1 / span 2;
-  grid-row: 2 / span 1;
-}
-
-/* --Past Work-- */
-
-/* --Resume-- */
-
-/* --Services-- */
-
-/* --Skills-- */
-
-/*--Swiper--*/
-
-.swiper-container {
-  width: 300px;
-  height: 300px;
-  padding: 50px;
-}
-
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 300px;
-  height: 300px;
-}
-
-
 /* --General-- */
 
 body{
@@ -114,6 +48,91 @@ a:hover, a:focus {
 
 .footer p {
   color: rgba(255, 255, 255, 0.5); 
+}
+
+/* div{
+  border: solid rgb(255, 0, 0);
+} */
+
+/* --Home-- */
+
+body#home{
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, #90e1ef62, #caf0f862), url('../img/placeholder2.png');
+  background-size: cover;
+  position: relative;
+  padding: 0;
+}
+
+
+
+/* --About Me-- */
+
+body#aboutMe div#content div{
+  color: blue;
+}
+
+/* .imgStack{
+  display: grid;
+} */
+
+
+
+.imgStackImg{
+  height: 200px;
+  width: 200px;
+} 
+
+.imgStackImg:first-of-type{
+  position: relative;
+  left: 0px;
+  top: 0px;
+  z-index: 0;
+  border: black solid;
+  float: left;
+}
+
+.imgStackImg:last-of-type{
+  position: relative;
+  left: -100px;
+  top: 100px;
+  z-index: 1;
+  border: black solid;
+  float: left;
+}
+
+/* --Past Work-- */
+
+.card-img-top{
+  width: 100%;
+  height: 200px;
+  border-bottom: solid;
+}
+
+.pastWorkCards{
+  border: solid
+}
+
+/* --Resume-- */
+
+/* --Services-- */
+
+/* --Skills-- */
+
+/*--Swiper--*/
+
+.swiper-container {
+  width: 300px;
+  height: 300px;
+  padding: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
 }
 
 /* --Nav-- */
