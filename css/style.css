@@ -120,12 +120,20 @@ body#aboutMe div#content div{
 
 /* --Skills-- */
 
-/*--Swiper--*/
+.skills-card{
+  border: #0096C7 solid;
+  border-radius: 30px;
+}
+
+.skills-card-header{
+  background-color: rgba(255, 255, 255, 0);
+}
+
+/*--Skills - Swiper--*/
 
 .swiper-container {
   width: 300px;
   height: 300px;
-  padding: 50px;
 }
 
 .swiper-slide {
@@ -133,6 +141,12 @@ body#aboutMe div#content div{
   background-size: cover;
   width: 300px;
   height: 300px;
+  background-color: rgba(0, 149, 199, 0.336);
+  border-radius: 30px;
+}
+
+.swiper-pagination{
+  color: #000;
 }
 
 /* --Nav-- */

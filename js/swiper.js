@@ -1,14 +1,18 @@
 var swiper = new Swiper('.swiper-container', {
-    effect: 'flip',
-    grabCursor: true,
-    pagination: {
-      el: '.swiper-pagination',
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
+  effect: 'flip',
+  grabCursor: true,
+  autoplay: {
+    delay: 1500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
 
 // var swiper = new Swiper('.swiper-container', {
 //   effect: 'coverflow',
@@ -16,10 +20,10 @@ var swiper = new Swiper('.swiper-container', {
 //   spaceBetween: 30,
 //   centeredSlides: true,
 //   slidesPerView: 'auto',
-//   autoplay: {
-//       delay: 1500,
-//       disableOnInteraction: false,
-//   },
+  // autoplay: {
+  //     delay: 1500,
+  //     disableOnInteraction: false,
+  // },
 //   coverflowEffect: {
 //     rotate: 50,
 //     stretch: 0,
