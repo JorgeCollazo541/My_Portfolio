@@ -21,10 +21,10 @@
 <body id="aboutMe">
     <div class="wrapper d-flex align-items-stretch">
         <nav id="sidebar">
-            <div class="custom-menu">
-                <button type="button" id="sidebarCollapse" class="btn btn-primary">
-                </button>
-            </div>
+            <!-- <div class="custom-menu">
+        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+        </button>
+      </div> -->
             <div id="navBackground" class="img bg-wrap text-center py-4"
                 style="background-image: url(img/backgroundNav.png);">
                 <div class="user-logo">
@@ -57,7 +57,7 @@
                         Contacts
                     </a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
-                        <li>
+                        <li class="subMenuItem">
                             <a href="#">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-envelope-open" viewBox="0 0 16 16">
@@ -67,7 +67,7 @@
                                 Email
                             </a>
                         </li>
-                        <li>
+                        <li class="subMenuItem">
                             <a href="#">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-phone" viewBox="0 0 16 16">
@@ -78,7 +78,7 @@
                                 Phone number
                             </a>
                         </li>
-                        <li>
+                        <li class="subMenuItem">
                             <a href="#">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-instagram" viewBox="0 0 16 16">
@@ -88,7 +88,7 @@
                                 Instagram
                             </a>
                         </li>
-                        <li>
+                        <li class="subMenuItem">
                             <a href="#">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-chat" viewBox="0 0 16 16">
@@ -98,7 +98,7 @@
                                 Messanger
                             </a>
                         </li>
-                        <li>
+                        <li class="subMenuItem">
                             <a href="#">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-facebook" viewBox="0 0 16 16">
@@ -108,7 +108,7 @@
                                 Facebook
                             </a>
                         </li>
-                        <li>
+                        <li class="subMenuItem">
                             <a href="#">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-discord" viewBox="0 0 16 16">
@@ -156,7 +156,20 @@
                     </a>
                 </li>
                 <li>
-                    <a href="services.html"><span class="mr-3"></span>
+                    <a href="resume.html"><span class="mr-3"></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-clipboard" viewBox="0 0 16 16">
+                            <path
+                                d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                            <path
+                                d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                        </svg>
+                        Resume
+                    </a>
+                </li>
+                <li>
+                    <a href="services.html" onclick="disabled()" id="serviceLink" class="disabled nav-link"><span
+                            class="mr-3"></span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-credit-card" viewBox="0 0 16 16">
                             <path
@@ -196,46 +209,58 @@
                         </div> -->
                         <div class="card mb-3" style="max-width: 540px;">
                             <div class="row g-0">
-                                <div class="col-md-4">
-                                    <img src="img/placeholder.png" alt="..." width="100%" height="100%">
-                                </div>
-                                <div class="col-md-8">
+                                <div class="card aboutMeCard">
+                                    <h5 class="card-header">Featured</h5>
                                     <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit longer.
-                                        </p>
-                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
-                                        </p>
+                                      <h5 class="card-title">Special title treatment</h5>
+                                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                                     </div>
-                                </div>
+                                  </div>
                             </div>
                         </div>
+                        <br>
                         <div class="card mb-3" style="max-width: 540px;">
-                                <div class="row g-0">
-                                    <div class="col-md-4">
-                                        <img src="img/placeholder.png" alt="..." width="100%" height="100%">
+                            <div class="row g-0">
+                                <div class="card aboutMeCard">
+                                    <h5 class="card-header">Featured</h5>
+                                    <div class="card-body">
+                                      <h5 class="card-title">Special title treatment</h5>
+                                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                                     </div>
-                                    <div class="col-md-8">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">This is a wider card with supporting text below as a
-                                                natural lead-in to additional content. This content is a little bit longer.
-                                            </p>
-                                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
+                                  </div>
                             </div>
+                        </div>
                     </div>
 
                     <div class="col">
-                            <div class="card">
-                                    <div class="card-body">
-                                      This is some text within a card body.
-                                    </div>
-                                  </div>
+                        <div class="card text-center aboutMeCard">
+                            <div class="card-header">
+                                <h5 class="card-title">Who am I?</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="">It is a long established fact that a reader will be distracted by the
+                                    readable content of a page when looking at its layout. The point of using Lorem
+                                    Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
+                                    using 'Content here, content here', making it look like readable English. Many
+                                    desktop publishing packages and web page editors now use Lorem Ipsum as their
+                                    default model text, and a search for 'lorem ipsum' will uncover many web sites still
+                                    in their infancy. Various versions have evolved over the years, sometimes by
+                                    accident, sometimes on purpose (injected humour and the like).It is a long
+                                    established fact that a reader will be distracted by the readable content of a page
+                                    when looking at its layout.The point of using Lorem Ipsum is that it has a
+                                    more-or-less normal distribution of letters, as opposed to using 'Content here,
+                                    content here', making it look like readable English. Many desktop publishing
+                                    packages and web page editors now use Lorem Ipsum as their default model text,as
+                                    opposed to using 'Content here,
+                                    content here', making it look like readable English. Many desktop publishing
+                                    packages and web page editors now use Lorem Ipsum as their default model text,as
+                                    opposed to using 'Content here,
+                                    content here', making it look like readable English. Many desktop publishing
+                                    packages and web page editors now use Lorem Ipsum as their default model text,Many desktop publishing
+                                    packages and web page editors </p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

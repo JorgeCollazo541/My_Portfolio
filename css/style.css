@@ -8,6 +8,7 @@ body{
   background: url("..img/placeholder2.png");
   color: rgb(0, 0, 0); 
   overflow: hidden;
+  background: linear-gradient(to bottom, #90e1ef62, #caf0f862);
 }
 
 h1, h2, h3, h4, h5{
@@ -70,9 +71,6 @@ body#home{
 
 /* --About Me-- */
 
-body#aboutMe div#content div{
-  color: blue;
-}
 
 .imgStackImg{
   height: 200px;
@@ -90,7 +88,8 @@ body#aboutMe div#content div{
   left: 0px;
   top: 0px;
   z-index: 0;
-  border: black solid;
+  border: #0077B6 solid 2px;
+  border-radius: 7px;
 }
 
 #imgStack2{
@@ -100,16 +99,17 @@ body#aboutMe div#content div{
   left: -100px;
   top: 100px;
   z-index: 1; 
-  border: black solid;
+  border: #0077B6 solid 2px;
+  border-radius: 7px;
 }
 
-#quoteImg{
-  width: 100%;
-  height: 100%;
+.aboutMeCard{
+  border: #0077B6 solid;
+  border-radius: 10px;
 }
 
-#quoteCard{
-  height: 120px;
+.aboutMeCard .card-header{
+  background-color: rgba(0, 118, 182, 0.589);
 }
 
 /* --Past Work-- */
@@ -121,25 +121,29 @@ body#aboutMe div#content div{
 }
 
 .pastWorkCard{
-  border: solid;
+  border: #0077B6 solid 3px;
+  border-radius: 25px;
   height: 300px;
 }
 
-
-/* --Resume-- */
-
-/* --Services-- */
+.pastWorkCard img{
+  border-bottom: #0077B6 solid 2px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
 
 /* --Skills-- */
 
 .skills-card{
   border: #0096C7 solid;
   border-radius: 30px;
+  height: 350px;
 }
 
 .skills-card-header{
   background-color: rgba(255, 255, 255, 0);
 }
+
 
 /*--Skills - Swiper--*/
 
@@ -160,6 +164,15 @@ body#aboutMe div#content div{
 .swiper-pagination{
   color: #000;
 }
+
+/* --Resume-- */
+
+#resume{
+  border: solid #0077B6 1px;
+  border-radius: 15px;
+}
+
+/* --Services-- */
 
 /* --Nav-- */
 
@@ -185,6 +198,14 @@ button:hover, button:focus {
   -o-transition: all 0.3s;
   transition: all 0.3s;
   position: relative; 
+}
+
+#homeSubmenu{
+  
+}
+
+.subMenuItem{
+  
 }
 
 #navBackground{
