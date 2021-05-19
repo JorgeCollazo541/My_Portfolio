@@ -33,7 +33,7 @@
               </div>
             </div>
             <ul class="list-unstyled components mb-5">
-              <li class="active">
+              <li>
                 <a href="index.html"><span class="mr-3"></span>
                   <!--Adds an icon from bootstrap-->
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house"
@@ -133,7 +133,7 @@
                   About Me
                 </a>
               </li>
-              <li>
+              <li class="active">
                 <a href="skills.html"><span class="mr-3"></span>
                   <!--Adds an icon from bootstrap-->
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-award"
@@ -153,18 +153,6 @@
                       d="M.54 3.87.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.826a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31zM2.19 4a1 1 0 0 0-.996 1.09l.637 7a1 1 0 0 0 .995.91h10.348a1 1 0 0 0 .995-.91l.637-7A1 1 0 0 0 13.81 4H2.19zm4.69-1.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139C1.72 3.042 1.95 3 2.19 3h5.396l-.707-.707z" />
                   </svg>
                   Past Work
-                </a>
-              </li>
-              <li>
-                <a href="resume.html"><span class="mr-3"></span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard"
-                    viewBox="0 0 16 16">
-                    <path
-                      d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
-                    <path
-                      d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
-                  </svg>
-                  Resume
                 </a>
               </li>
               <li>
@@ -215,13 +203,7 @@
                             <br>
                             <div class="swiper-container">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide" style="background-image:url(../img/HTML5Logo.png)"></div>
-                                    <div class="swiper-slide" style="background-image:url(../img/CSS3Logo.png)"></div>
-                                    <div class="swiper-slide" style="background-image:url(../img/JavaScriptLogo.png)">
-                                    </div>
-                                    <div class="swiper-slide" style="background-image:url(../img/BootStrapLogo.png)">
-                                    </div>
-                                    <div class="swiper-slide" style="background-image:url(../img/MTABadge.png)"></div>
+                                    <div class="swiper-slide" style="background-image:url(../img/MTA.png)"></div>
                                 </div>
 
                                 <!-- Add Pagination -->
@@ -282,15 +264,21 @@
                         <div class="col">
                             <div class="card skills-card mb-1 mt-3" style="max-width: 18rem;">
                                 <div class="card-header skills-card-header">
-                                    <h3>Education</h3>
+                                    <h3>My resume</h3>
                                 </div>
                                 <div class="card-body text-dark">
-                                    <h5 class="card-title">Sierra Linda High School</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the bulk of the card's content.</p>
-                                    <h5 class="card-title">Dark card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the bulk of the card's content.</p>
+                                    <!-- Button trigger modal -->
+                                    <img data-bs-toggle="modal" data-bs-target="#exampleModal" id="resume" src="img/My Resume.png" height="75%" width="100%">
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-body">
+          <img src="img/My Resume.png" height="700px" width="600px">
+        </div>
+    </div>
+  </div>
                                 </div>
                             </div>
                         </div>

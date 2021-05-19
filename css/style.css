@@ -112,6 +112,11 @@ body#home{
   background-color: rgba(0, 118, 182, 0.589);
 }
 
+#whoAmICard{
+  height: 98%;
+}
+
+
 /* --Past Work-- */
 
 .card-img-top{
@@ -135,13 +140,13 @@ body#home{
 /* --Skills-- */
 
 .skills-card{
-  border: #0096C7 solid;
-  border-radius: 30px;
+  border: #0077B6 solid;
+  border-radius: 10px;
   height: 350px;
 }
 
 .skills-card-header{
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(0, 118, 182, 0.589);
 }
 
 
@@ -169,7 +174,6 @@ body#home{
 
 #resume{
   border: solid #0077B6 1px;
-  border-radius: 15px;
 }
 
 /* --Services-- */
