@@ -113,7 +113,15 @@ body#home{
 }
 
 #whoAmICard{
-  height: 98%;
+  height: 730px;
+}
+
+.smallCard{
+  height: 180px;
+}
+
+#hobbies ul li{
+  list-style: none;
 }
 
 
@@ -125,16 +133,25 @@ body#home{
   border-bottom: solid;
 }
 
-.pastWorkCard{
+.past-work-card{
   border: #0077B6 solid 3px;
   border-radius: 25px;
-  height: 300px;
+  max-height: 370px;
+  min-height: 370px;
 }
 
-.pastWorkCard img{
+.past-work-card img{
   border-bottom: #0077B6 solid 2px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+}
+
+.past-work-content{
+  overflow: auto;
+}
+
+.past-work-img{
+  height: 170px;
 }
 
 /* --Skills-- */
@@ -147,6 +164,10 @@ body#home{
 
 .skills-card-header{
   background-color: rgba(0, 118, 182, 0.589);
+}
+
+.card-content{
+  overflow: auto;
 }
 
 
